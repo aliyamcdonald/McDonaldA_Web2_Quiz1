@@ -1,3 +1,29 @@
 /* =============
     Footer
 ============= */
+footer{
+    background-color: $black;
+    padding: 30px;
+    text-align: center;
+    color: $white;
+    position: relative;
+
+    p {
+        @include lg {
+            text-align: right;
+            display: grid;
+        }
+
+    }
+
+    img {
+        @include lg {
+            display: grid;
+        }
+    }
+
+
+
+
+
+}

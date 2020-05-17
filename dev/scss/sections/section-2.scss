@@ -3,56 +3,118 @@
 ============= */
 
 #section-2 {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background-color: $light-grey;
-
-    div {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 50px;
     
 
+    display: grid;
+    background-color: $light-grey;
 
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-        }
-
-        p {
-            font-family: 'Lato', sans-serif;
-            text-align: justify;
-        }
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2-container .";
+        
     }
+
 
     #section-2-container{
 
         @include md {
             display: grid;
-            grid-template-columns: auto 1200px auto;
-            grid-template-areas: ". section-2-container .";
-            height: 246;
-            padding-bottom: 0px;
-            padding-top: 0px;
-            text-align: left;
+            grid-template-columns: 70% auto;
+            grid-template-areas: "section-2-right-content section-2-image";
+            
+        
+        }
 
-            aside {
-                padding-left: 400px;
+        @include lg {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "section-2-image section-2-right-content";
+    
+            
+        }
+        @include xl{
+            grid-area: section-2-container;
+            
+            
+        }
+
+        section{
+            margin: 60px 0;
+            @include md{
+                margin: 0;
             }
+        
+            #section-2-right-content{
+                
+        
+                h1 {
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
 
-            div {
-                padding-right: 10px;
-
-                h1,p {
-                    text-align: left;
+                    @include xl {
+                        display: grid;
+                        padding-top: 140px;
+                    }
                 }
+        
+                p {
+                    font-family: 'Lato', sans-serif;
+                    text-align: justify;
+
+                    @include xl {
+                        padding-left: 275px;
+                        display: grid;
+                        grid-template-columns: 85% auto;
+                
+                    }
+                }
+        
+                padding: 15px;
+                @include md{
+                    grid-area: section-2-content;
+                }
+        
             }
         }
 
+        aside {
+            background-image: url('../img/section-2/shoes.jpg');
+            background-size: cover;
+            height: 430px;
+            width: 100%;
+    
+            @include md{
+                grid-area: section-2-image;
+                height: 260px;
+                width: 300px;
+        
+            }
+
+            @include lg {
+                grid-area: section-2-image;
+                height: 430px; 
+                width: 100%;
+            }
+
+            @include xl {
+                grid-area: section-2-image;
+                height: 600px;
+                width: 600px;
+            }
+    
+        }
+    
+
     }
+
+
+    
 
     
 
 
 
 }
+
