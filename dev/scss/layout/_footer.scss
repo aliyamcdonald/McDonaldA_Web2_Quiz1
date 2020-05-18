@@ -3,27 +3,49 @@
 ============= */
 footer{
     background-color: $black;
+    background-position: fixed;
     padding: 30px;
     text-align: center;
     color: $white;
     position: relative;
 
-    p {
-        @include lg {
-            text-align: right;
-            display: grid;
-        }
+    @include lg {
+        display: grid;
+        grid-template-columns: "social Drxel";
+    }
 
+    .outer {
+        width: 300px;
+        margin: 0 auto;
+        grid-area: Drexel;
+    }
+
+    .hr {
+        color: $red
+    }
+
+    .hr4 {
+        color: $white;
+    }
+
+    .hr5 {
+        color: $red;
+    }
+
+    @include lg {
+        display: grid;
+        text-align: right;
+        
+        padding-bottom: 20px;
+        padding-left: 70px;
     }
 
     img {
         @include lg {
             display: grid;
+            padding-top: 10px;
         }
     }
-
-
-
 
 
 }
