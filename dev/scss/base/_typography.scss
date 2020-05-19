@@ -1,10 +1,116 @@
 /* =============
     Typography
 ============= */
-body{
+#section-1 {
+    h1 {
+        font-family: 'Comfortaa', cursive;
+        font-size: 25px;
+        
+        @include md {
+            font-size: 40px;
+        }
+
+        @include lg {
+            font-size: 40px;
+        }
+
+        @include xl {
+            font-size: 70px;
+        }
+    }
+
+    p {
+        font-family: 'Comfortaa', cursive;
+        font-size: 16px;
+
+        @include md {
+            font-size: 25px;
+        }
+
+        @include lg {
+            font-size: 32px;
+        }
+
+        @include xl {
+            font-size: 32px;
+        }
+    }
+
+}
+
+#section-2 {
+    #section-2-right-content{
+                
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            
+
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            
+        }
+    }
+
+}
+
+#section-3 {
+    #section-3-container {
+        h1 {
+            font-family: 'Montserrat-Bold', sans-serif;
+            font-size: 35px;
+        }
+
+        @include lg {
+            font-size: 30px;
+        }
+
+        @include xl {
+            font-size: 40px;
+        }
+    }
+
+    section {
+        h2 {
+            font-family: 'Montserrat-Bold', sans-serif;
+            font-size: 27px;
+        }
+
+        @include lg {
+            font-size: 25px;
+        }
+
+        @include xl {
+            font-size: 25px;
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+
+            @include md {
+                font-size: 22px;
+            }
+           
+            
+
+            @include lg {
+                font-size: 17px;
+            }
+        }
+
+        h4 {
+            font-family: 'Lato', sans-serif;
+        }
+    }
+
+
+}
+
+#footer {
     font-family: 'Comfortaa', cursive;
 }
 
-h1,h2,h3,h5{
-    font-family: 'Montserrat', sans-serif;
-}
+
+

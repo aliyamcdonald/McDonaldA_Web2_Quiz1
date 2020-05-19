@@ -320,11 +320,73 @@ template {
 /* =============
     Typography
 ============= */
-body {
-  font-family: 'Comfortaa', cursive; }
-
-h1, h2, h3, h5 {
+#section-1 h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 25px; }
+  @media (min-width: 768px) {
+    #section-1 h1 {
+      font-size: 40px; } }
+  @media (min-width: 992px) {
+    #section-1 h1 {
+      font-size: 40px; } }
+  @media (min-width: 1200px) {
+    #section-1 h1 {
+      font-size: 70px; } }
+#section-1 p {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px; }
+  @media (min-width: 768px) {
+    #section-1 p {
+      font-size: 25px; } }
+  @media (min-width: 992px) {
+    #section-1 p {
+      font-size: 32px; } }
+  @media (min-width: 1200px) {
+    #section-1 p {
+      font-size: 32px; } }
+#section-2 #section-2-right-content h1 {
   font-family: 'Montserrat', sans-serif; }
+
+#section-2 #section-2-right-content p {
+  font-family: 'Lato', sans-serif; }
+
+#section-3 #section-3-container h1 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 35px; }
+
+@media (min-width: 992px) {
+  #section-3 #section-3-container {
+    font-size: 30px; } }
+
+@media (min-width: 1200px) {
+  #section-3 #section-3-container {
+    font-size: 40px; } }
+
+#section-3 section h2 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 27px; }
+
+@media (min-width: 992px) {
+  #section-3 section {
+    font-size: 25px; } }
+
+@media (min-width: 1200px) {
+  #section-3 section {
+    font-size: 25px; } }
+
+#section-3 section p {
+  font-family: 'Lato', sans-serif; }
+  @media (min-width: 768px) {
+    #section-3 section p {
+      font-size: 22px; } }
+  @media (min-width: 992px) {
+    #section-3 section p {
+      font-size: 17px; } }
+#section-3 section h4 {
+  font-family: 'Lato', sans-serif; }
+
+#footer {
+  font-family: 'Comfortaa', cursive; }
 
 /* =============
     Buttons
@@ -413,30 +475,8 @@ footer {
     #section-1 {
       height: 959px; } }
   #section-1 h1 {
-    color: #1A4B58;
-    font-family: 'Comfortaa', cursive;
-    font-size: 25px; }
-    @media (min-width: 768px) {
-      #section-1 h1 {
-        font-size: 40px; } }
-    @media (min-width: 992px) {
-      #section-1 h1 {
-        font-size: 40px; } }
-    @media (min-width: 1200px) {
-      #section-1 h1 {
-        font-size: 70px; } }
-  #section-1 p {
-    color: #338595;
-    font-size: 16px; }
-    @media (min-width: 768px) {
-      #section-1 p {
-        font-size: 25px; } }
-    @media (min-width: 992px) {
-      #section-1 p {
-        font-size: 32px; } }
-    @media (min-width: 1200px) {
-      #section-1 p {
-        font-size: 32px; } }
+    color: #1A4B58; }
+
 /* =============
     Section 2
 ============= */
@@ -470,14 +510,12 @@ footer {
     #section-2 #section-2-container section #section-2-right-content {
       padding: 15px; }
       #section-2 #section-2-container section #section-2-right-content h1 {
-        font-family: 'Montserrat', sans-serif;
         text-align: center; }
         @media (min-width: 1200px) {
           #section-2 #section-2-container section #section-2-right-content h1 {
             display: grid;
             padding-top: 140px; } }
       #section-2 #section-2-container section #section-2-right-content p {
-        font-family: 'Lato', sans-serif;
         text-align: justify; }
         @media (min-width: 1200px) {
           #section-2 #section-2-container section #section-2-right-content p {
@@ -519,17 +557,13 @@ footer {
       grid-template-columns: auto 1200px auto;
       grid-template-areas: ". section-3-container ."; } }
   #section-3 #section-3-container h1 {
-    font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 35px;
     text-align: center;
     grid-template-areas: ". section ."; }
     @media (min-width: 992px) {
       #section-3 #section-3-container h1 {
-        font-size: 30px;
         padding-left: 400px; } }
     @media (min-width: 1200px) {
       #section-3 #section-3-container h1 {
-        font-size: 40px;
         padding-left: 500px; } }
   #section-3 #section-3-container section {
     display: grid;
@@ -537,17 +571,9 @@ footer {
     margin: 10px 10px;
     grid-template-areas: "card1" "card2" "card3"; }
     #section-3 #section-3-container section h2 {
-      font-family: 'Montserrat-Bold', sans-serif;
-      font-size: 27px;
       text-align: center;
       padding-left: 5px;
       padding-right: 5px; }
-      @media (min-width: 992px) {
-        #section-3 #section-3-container section h2 {
-          font-size: 25px; } }
-      @media (min-width: 1200px) {
-        #section-3 #section-3-container section h2 {
-          font-size: 25px; } }
     #section-3 #section-3-container section p {
       display: grid;
       grid-template-columns: 80% auto;
@@ -555,21 +581,19 @@ footer {
       @media (min-width: 768px) {
         #section-3 #section-3-container section p {
           grid-template-columns: 100% auto;
-          padding-left: 25px;
-          font-size: 22px; } }
+          padding-left: 25px; } }
       @media (min-width: 992px) {
         #section-3 #section-3-container section p {
           grid-template-columns: 100% auto;
-          padding-left: 25px;
-          font-size: 17px; } }
+          padding-left: 25px; } }
     #section-3 #section-3-container section h4 {
       padding-left: 20px;
       padding-right: 20px; }
     #section-3 #section-3-container section img {
-      height: 310px; }
+      height: 240px; }
       @media (min-width: 768px) {
         #section-3 #section-3-container section img {
-          height: 290px; } }
+          height: 236px; } }
       @media (min-width: 992px) {
         #section-3 #section-3-container section img {
           height: 240px; } }
